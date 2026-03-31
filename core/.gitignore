@@ -1,0 +1,14 @@
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.vscode/
+.idea/
+
+# Database files
+database/*.txt
+database/*.csv
+
+# Experimental files
+experiments/
