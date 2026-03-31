@@ -10,3 +10,4 @@ tree /f /a | Select-String -NotMatch "node_modules" | Select-String -NotMatch " 
 
 Get-ChildItem -Recurse -Attributes !Directory+!Hidden | Where-Object { $_.FullName -notmatch 'node_modules' } | Select-Object FullName
 
+tree /f /a | Where-Object { $_ -notmatch 'node_modules' -and $_ -notmatch '^\+---[ ]*$' }s
